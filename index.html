@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        /* Criando um modelo de CSS para o comando nativo em HTML */
+        h1 {
+            
+            font-family:helvetica, sans-serif;
+            font-weight: bolder;          
+        }
+        p{
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul{
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        /* criando uma class */
+
+        .cor {
+            background-color: rgba(219, 224, 224, 0.158);
+        }
+        .foto {
+            align-content: center ;
+            border-radius: 50%;
+            padding: 15px;
+            padding-left: 30px;
+        } 
+        .contatos {
+            font-size: 70%;
+
+        }
+        #email {
+            vertical-align: middle;            
+        }
+        #linkedin {
+            margin-left: 2px;
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+        #github {
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+
+
+<body class="cor">
+    <header>
+    <!--Criando uma tabela-->
+    <table>
+        <!-- criou uma linha dentro da tabela-->
+        <tr >
+            <!-- vou criar duas colunas dentro da nossa linha dentro da tabela-->    
+            <td>
+                <!-- Foto perfil -->
+            
+                <img src="../imagem/LucasAndrade.jpeg" width="200" height="200" class="foto">  
+
+            </td>
+    
+            <td>
+                <!-- Resumo da minha formação -->
+                 <h1> Lucas Andrade de Sá Nascimento </h1> <p>Formado em engenharia civil pela Estácio de Sá. Apaixonado por tecnologia vivendo um momento de transição de carreira pra desenvolvimento frontend ou fullstack.</p>
+            </td>
+        </tr>
+    </table>
+    </header>
+        <table>
+        <td id="redes">
+                   
+            <p class="contatos"><img src="../imagem/email-icon.webp" width="20" height="20" id="email"> andradedesa.lucas@gmail.com<br></p>
+            <p class="contatos"><img src="../imagem/linkedin-icon.png" width="15" height="15" id="linkedin"> linkedin.com/in/lucas-as-nascimento <br></p>
+            <p class="contatos"><img src="../imagem/github-icon.webp" width="20" height="20" id="github"> github.com/Lucas-andrade-nascimento <br></p>
+            </fieldset>
+        </td>
+        <td>
+            <p>Possuo conhecimentos em: </p>
+            <ul>
+                <li>HTML5;</li>
+                <li>CSS;</li>
+                <li>Javascript;</li>
+                <li>React;</li>
+                <li>SQL.</li>
+            </ul> 
+            <p>Atualmente estou ampliando meus conhecimentos nessas e em outras tecnologias, através da jornada Criptodev da Gama Academy.</p>
+        </td>
+    </table>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+#container {
+  display: grid;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+}
+#lateral {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 0 15px;
+  color: aliceblue;
+  background-color: #084d6e;
+}
+.foto {
+  align-content: center;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: -12px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+aside p {
+  font-size: 120%;
+}
+nav ul {
+  padding-top: 20px;
+  list-style-type: none;
+  color: aliceblue;
+}
+nav ul li {
+  line-height: 1.7;
+  margin-left: -40px;
+}
+a {
+  text-decoration: none;
+}
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 13px;
+}
+nav ul li a:hover {
+  color: rgb(133, 129, 129);
+  font-size: 110%;
+}
+#centro {
+  grid-column-start: 4;
+  grid-column-end: 12;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+#sobreMim p {
+  text-align: justify;
+  line-height: 1.4;
+}
+h3 {
+  font-size: 18px;
+}
+.faculdade {
+  font-size: 15px;
+  margin-bottom: -12px;
+}
+.curso {
+  margin-bottom: -12px;
+}
+#portfolio ul {
+  list-style-type: circle;
+  line-height: 1.5;
+  margin-left: -20px;
+}
+a {
+  color: rgba(0, 0, 0, 1);
+  font-style: italic;
+}
+a:hover {
+  text-decoration: none;
+  color: #084d6e;
+  font-size: 110%;
+}
+#contato img {
+  vertical-align: middle;
+}
+#gmail {
+  margin-right: 3px;
+  margin-left: -3px;
+}
+form input {
+  margin-top: 10px;
+}
+#name {
+  margin-left: 32px;
+  width: 250px;
+}
+#email {
+  margin-left: 35px;
+  width: 250px;
+}
+#mensagem {
+  display: table-cell;
+  vertical-align: top;
+  width: 250px;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  background-color: rgb(230, 228, 228);
+}

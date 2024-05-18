@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <style>
-        /* Criando um modelo de CSS para o comando nativo em HTML */
-        h1 {
-            
-            font-family:helvetica, sans-serif;
-            font-weight: bolder;          
-        }
-        p{
-            font-size: 14px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        ul{
-            font-size: 13px;
-            font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        
-        /* criando uma class */
-
-        .cor {
-            background-color: rgba(219, 224, 224, 0.158);
-        }
-        .foto {
-            align-content: center ;
-            border-radius: 50%;
-            padding: 15px;
-            padding-left: 30px;
-        } 
-        .contatos {
-            font-size: 70%;
-
-        }
-        #email {
-            vertical-align: middle;            
-        }
-        #linkedin {
-            margin-left: 2px;
-            margin-right: 2px;
-            vertical-align: middle;
-        }
-        #github {
-            vertical-align: middle;
-        }
-
-    </style>
+    <title>Curriculo</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
+<body id="container">
+    <aside id="lateral">
+        <img src="./imagem/LucasAndrade.jpeg" width="250" height="250" class="foto">
 
-<body class="cor">
-    <header>
-    <!--Criando uma tabela-->
-    <table>
-        <!-- criou uma linha dentro da tabela-->
-        <tr >
-            <!-- vou criar duas colunas dentro da nossa linha dentro da tabela-->    
-            <td>
-                <!-- Foto perfil -->
-            
-                <img src="../imagem/LucasAndrade.jpeg" width="200" height="200" class="foto">  
+        <h1>Lucas Andrade de Sá <br>Nascimento </h1>
+        <p>Desenvolvedor fullstack</p>
 
-            </td>
-    
-            <td>
-                <!-- Resumo da minha formação -->
-                 <h1> Lucas Andrade de Sá Nascimento </h1> <p>Formado em engenharia civil pela Estácio de Sá. Apaixonado por tecnologia vivendo um momento de transição de carreira pra desenvolvimento frontend ou fullstack.</p>
-            </td>
-        </tr>
-    </table>
-    </header>
-        <table>
-        <td id="redes">
-                   
-            <p class="contatos"><img src="../imagem/email-icon.webp" width="20" height="20" id="email"> andradedesa.lucas@gmail.com<br></p>
-            <p class="contatos"><img src="../imagem/linkedin-icon.png" width="15" height="15" id="linkedin"> linkedin.com/in/lucas-as-nascimento <br></p>
-            <p class="contatos"><img src="../imagem/github-icon.webp" width="20" height="20" id="github"> github.com/Lucas-andrade-nascimento <br></p>
-            </fieldset>
-        </td>
-        <td>
-            <p>Possuo conhecimentos em: </p>
+        <nav class="menu">
             <ul>
-                <li>HTML5;</li>
-                <li>CSS;</li>
-                <li>Javascript;</li>
-                <li>React;</li>
-                <li>SQL.</li>
-            </ul> 
-            <p>Atualmente estou ampliando meus conhecimentos nessas e em outras tecnologias, através da jornada Criptodev da Gama Academy.</p>
-        </td>
-    </table>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <section id="centro">
+
+        <div id="sobreMim">
+            <h2>Sobre mim</h2>
+            <p>
+                Passo por uma transição de carreira onde venho me desenvolvendo com cursos, e projetos pessoais de
+                desenvolvimento de software.
+                Também estou aprimorando minhas hard e soft skills. Busco uma oportunidade como Desenvolvedor Júnior
+                visando colocar em prática meus conhecimentos obtidos.
+                Possuo experiência com projetos, em atividades administrativas e orçamentárias adivindas da minha
+                carreira anterior em engenharia civil onde atuei por cerca de três anos.
+                Tenho inglês avançado e gosto muito de trabalhar em colaboração com diferentes times e pessoas.
+            </p>
+        </div>
+
+        <div id="formacao">
+            <h2>Formação</h2>
+
+            <h3 class="faculdade">Análise e Desenvolvimentos de Sistemas - Uninter</h3>
+            <p>06/2022 até 06/2025 </p>
+
+            <h3 class="faculdade">Engenharia Civil - Universidade Estácio de Sá</h3>
+            <p>06/2014 até 06/2020</p>
 
 
-    
+            <h3 clas="">Cursos </h3>
+            <h4 class="curso">Java Completo + Projetos, Udemy – 2024 </h4>
+            <p>JPA, Hibernate, Springboot, PostgreSQL, MongoDB, Git e GitHub. </p>
 
+            <h4 class="curso">Desenvolvimento de software em backend, Cubos Academy – 2023</h4>
+            <p>Node.js, PostgreSQL, API Rest, Express, JWT, Query Builder, Joi, node mailer e Metodologias Ágeis. </p>
+            <h4 class="curso">Fundamentos de AWS, Escola da Nuvem – 2023 </h4>
+            <p>AWS WAF, Amazon EC2, Load Balancer, AWS Lambda, S3, Route 53 e CloudFront.</p>
+            <h4 class="curso">Cripto Dev – Pogramação Ethereum, Gama Academy – 2022</h4>
+            <p>HTML, CSS, Bootstrap, JavaScript, Solidity. </p>
+
+        </div>
+
+        <div id="portfolio">
+            <h2>Portfólio</h2>
+
+            <p>Alguns projetos que realizei:</p>
+            <ul>
+                <li><a href="https://lucas-andrade-nascimento.github.io/landing-page-criptoapp/">Landing Page Responsiva
+                        Cripto App</a></li>
+                <li><a href="https://lucas-andrade-nascimento.github.io/barbeariagama-sala3/">Site Barbearia Gama</a>
+                </li>
+                <li><a href="https://github.com/Lucas-andrade-nascimento/desafio5-cubos-academy">API de sistema de
+                        caixa</a></li>
+            </ul>
+        </div>
+
+        <div id="contato">
+            <h2>Contato</h2>
+
+            <h4>Onde me encontar</h4>
+
+            <p><img src="./imagem/email-icon.webp" width="20" height="20" id="gmail"><a
+                    href="andradedesa.lucas@gmail.com">Email</a><br></p>
+            <p><img src="./imagem/linkedin-icon.png" width="15" height="15" id="linkedin"> <a
+                    href="linkedin.com/in/lucas-as-nascimento">Linkedin</a> <br></p>
+            <p><img src="./imagem/github-icon.webp" width="20" height="20" id="github"><a
+                    href="github.com/Lucas-andrade-nascimento">GitHub</a><br></p>
+
+            <h4>Mande uma mensagem aqui</h4>
+
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="textarea" classs="mensagem">Mensagem:</label>
+                <textarea type="text" id="mensagem" name="mensagem"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Lucas Andrade</p>
+    </footer>
 </body>
-</html>
